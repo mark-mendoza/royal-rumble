@@ -65,8 +65,11 @@ def royal_rumble_selection (num_of_rum_entrants, num, entrants, picks):
 # Main Program
 rumble_entrants = input("How many people are in this year's Royal Rumble: ")
 num_of_participants = participants()
+print()
 names_of_participants = names_of_entrants(num_of_participants)
+print()
 picks_per_participants = picks_per_person(rumble_entrants, num_of_participants, names_of_participants)
+print()
 rumble_placement = royal_rumble_selection(rumble_entrants, num_of_participants, names_of_participants, picks_per_participants)
 
 for k in range(1, len(rumble_placement) + 1):
